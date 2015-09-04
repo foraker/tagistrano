@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Tagistrano::VERSION
   spec.authors       = ['Kyle Edson']
   spec.email         = ['kae@foraker.com']
-  spec.description   = 'Automatically create git tags on Capistrano deploys'
-  spec.summary       = 'Automatically create git tags on Capistrano deploys'
+  spec.description   = 'Automatically create git tags on Capistrano tasks'
+  spec.summary       = 'Add prompts to Capistrano tasks to automatically generate new git tags based on semantic versioning'
   spec.homepage      = 'https://github.com/foraker/tagistrano'
   spec.license       = 'MIT'
 
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler'
-  spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'bundler', '~> 0'
+  spec.add_development_dependency 'rake', '~> 0'
+  spec.add_development_dependency 'rspec', '~> 0'
 end
